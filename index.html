@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Modal.js
+
+    </title>
+    <link rel="shortcut icon" href="menu.png" type="image/x-icon">
+</head>
+
+<body>
+    <fieldset class="-col12-12-rp">
+        <div class="hs-12">
+            <legend>Modal.JS</legend>
+            <h3 class="lmol-12">
+                A free, lightweight jQuery Modal plugin. It is only ~1KB gzipped. Configurable using direct options and
+                HTML5 data-* attributes.
+            </h3>
+            <div class="line-12">
+                <a role="button" target="_blank" href="https://github.com/Gigorgu/app.modal.js" class="btn btn-secondary">View on Github</a>
+                <a role="button" href="https://github.com/Gigorgu/app.modal.js/archive/refs/tags/1.0.zip" class="btn btn-primary">Download</a>
+            </div>
+            <div class="repeat">Version 1.0</div>
+        </div>
+    </fieldset>
+    <fieldset class="jr-13">
+        <legend>Get Started</legend>
+        <div class="alert alert-danger" role="alert">
+            Danger , Do not use bootstrap with this plugin right now!
+        </div>
+        Step by step create the first modal instance.
+        <hr>
+        <kbd>jquery-3</kbd>
+
+        jquery - is default plugin for js , if you not include jquery . Modal plugin may be not work
+        <div class="mt-copy">
+            <div class="copy-cont">
+                <button data-clipboard-target="#first" class="btn btn-primary btn-clipboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                        <path
+                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                    </svg>
+                </button>
+            </div>
+            <pre
+                id="first"><code class="html">&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js">&lt;/script></code></pre>
+        </div>
+        <kbd>Css</kbd> You can create your stylesheet , but if you use default styles , all be okay
+        <div class="mt-copy">
+            <div class="copy-cont">
+                <button data-clipboard-target="#first1" class="btn btn-primary btn-clipboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                        <path
+                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                    </svg>
+                </button>
+            </div>
+            <pre id="first1"><code class="html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Gigorgu/app.modal.js/modal.min.css"></code></pre>
+        </div>
+        <kbd>Javascript</kbd>
+        <div class="mt-copy">
+            <div class="copy-cont">
+                <button data-clipboard-target="#first12" class="btn btn-primary btn-clipboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                        <path
+                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                    </svg>
+                </button>
+            </div>
+            <pre id="first12"><code class="html">&lt;script src="https://cdn.jsdelivr.net/gh/Gigorgu/app.modal.js/modal.min.js">&lt;/script></code></pre>
+        </div>
+        <kbd>Init</kbd>
+        <div class="mt-copy">
+            <div class="copy-cont">
+                <button data-clipboard-target="#first122" class="btn btn-primary btn-clipboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                        <path
+                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                    </svg>
+                </button>
+            </div>
+            <pre id="first122"><code class="javascript">$('.callmodal').modal()</code></pre>
+        </div>
+        <legend>Options</legend>
+        The default modules for use , and you can know
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Value</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>
+                        data-container="$"
+                    </code></td>
+                    <td>
+                        <code>$</code> - your value , data-container sets to container of modal <code>class</code> or <code>id</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>
+                        data-modal="$"
+                    </code></td>
+                    <td>
+                        <code>$</code> - your value , data-modal sets to modal of  <code>class</code> or <code>id</code>
+                    </td>
+                    
+                </tr><tr>
+                    <td><code>
+                        close=""
+                    </code></td>
+                    <td>
+                        Close can be used in modal , he search modal mains and closes
+                    </td>
+                    
+                </tr>
+            </tbody>
+            
+        </table>
+        <legend>How it works</legend>
+        You can see the sample 
+        <div class='mt-copy'> <div class='copy-cont'> <button data-clipboard-target='#f1irst' class='btn btn-primary btn-clipboard'> <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-clipboard-plus' viewBox='0 0 16 16'> <path fill-rule='evenodd' d='M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z'/> <path d='M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z'/> <path d='M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z'/> </svg> </button> </div> <pre id='f1irst'><code class='html'>
+&lt;button data-container=".container_modal" data-modal="#target" class="btnmodal">Modal Button&lt;/button>
+&lt;script>
+    $('.btnmodal').modal()
+&lt;/script>
+&lt;!-- AFTER THIS -->
+&lt;!-- MODAL -->
+&lt;div class="container-modal">
+    &lt;div id="target">
+    &lt;!-- CONTENT -->
+        &lt;!-- header text and close button -->
+        &lt;div class="__header">&lt;/div>
+
+        &lt;!-- text -->
+        &lt;div class="__text">&lt;/div>
+
+        &lt;!-- bottom group - may be use for buttons -->
+        &lt;div class="__text">&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre> </div>
+    <Legend>Example</Legend>
+    <div class="example">
+        <button data-container="#bruh" data-modal="#nirgg" class="btn btn-primary modal_show_ofc">
+            Example Modal
+        </button>
+        <div id="bruh" class="container_modal">
+            <div id="nirgg">
+                <div class="__header">
+                    Lorem, ipsum.
+                    <button class="lcvmedgkl" close>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, voluptate! Animi explicabo fugit quas!
+                    Sunt
+                    quidem eum animi nobis maxime a quae qui corporis! Voluptate quam voluptatum quas enim ipsa.
+                </div>
+                <div class="__text grid grid2 -gap">
+                    <button>Lorem</button>
+                    <button close>Ipsum</button>
+                </div>
+            </div>
+        </div>
+        <div class='mt-copy'> <div class='copy-cont'> <button data-clipboard-target='#firsst' class='btn btn-primary btn-clipboard'> <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-clipboard-plus' viewBox='0 0 16 16'> <path fill-rule='evenodd' d='M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z'/> <path d='M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z'/> <path d='M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z'/> </svg> </button> </div> <pre id='firsst'><code class='html'>&lt;button data-container="#bruh" data-modal="#nirgg" class="btn btn-primary modal_show_ofc">
+    Example Modal
+&lt;/button>
+&lt;div id="bruh" class="container_modal">
+    &lt;div id="nirgg">
+        &lt;div class="__header">
+            Lorem, ipsum.
+            &lt;button class="lcvmedgkl" close>
+                &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    &lt;path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                &lt;/svg>
+            &lt;/button>
+        &lt;/div>
+        &lt;div class="__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, voluptate! Animi explicabo fugit quas!
+            Sunt
+            quidem eum animi nobis maxime a quae qui corporis! Voluptate quam voluptatum quas enim ipsa.
+        &lt;/div>
+        &lt;div class="__text grid grid2 -gap">
+            &lt;button>Lorem&lt;/button>
+            &lt;button close>Ipsum&lt;/button>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre> </div>
+    </div>
+    </fieldset>
+    <footer class="footer">
+        <center>
+          with ♥️ By Gigorgu
+        </center>
+        <ul>
+            <li>Used
+                <ul>
+                    <li>bootstrap</li>
+                    <li>jquery</li>
+                    <li>highlight.js</li>
+                    <li>popper.js</li>
+                    <li>clipboard.js</li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<link rel="stylesheet" href="index.css">
+
+<script src="clipboard.min.js"></script>
+<script>new ClipboardJS('.btn-clipboard');</script>
+<script src="index.js"></script>
+<link rel="stylesheet" href="s.css">
+<script>
+    $('.modal_show_ofc').modal()
+</script>

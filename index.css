@@ -1,0 +1,95 @@
+.hs-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hs-12 > legend {
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+}
+
+.repeat {
+  width: 100%;
+  padding: 0.45em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lmol-12 {
+  width: 100%;
+  font-size: 1.9em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.line-12 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 1em;
+}
+
+.-col12-12-rp {
+  background-color: #412e57;
+  padding-top: 4em;
+  color: #fff;
+  padding-bottom: 2em;
+}
+
+.footer {
+  color: #fff;
+  padding: 1em;
+  background-color: #573e74;
+}
+
+.mt-copy {
+  position: relative;
+}
+
+.copy-cont {
+  position: absolute;
+  top: 0.335em;
+  right: 0.335em;
+}
+
+.mt-copy {
+  margin-top: 5px;
+}
+
+.jr-13 {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.jr-13 > legend {
+  font-size: xx-large;
+}
+
+.example {
+  padding: 1em;
+  border-radius: 0.45em;
+  background-color: #dfdfdf;
+}
